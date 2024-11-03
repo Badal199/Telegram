@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BN LAST KING</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            color: #00ff00; /* Neon green text */
+            background: black; /* Fallback background */
+            overflow: hidden; /* Hide overflow for animation */
+            height: 100vh; /* Full height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        /* Hacker animation effect */
+        @keyframes codeAnimation {
+            0% { transform: translateY(100%); }
+            100% { transform: translateY(-100%); }
+        }
+
+        .code-line {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            opacity: 0.1;
+            white-space: nowrap;
+            animation: codeAnimation 10s linear infinite;
+        }
+
+        /* Randomly generated code lines */
+        .code-line:nth-child(1) { top: 0%; animation-delay: 0s; }
+        .code-line:nth-child(2) { top: 20%; animation-delay: 2s; }
+        .code-line:nth-child(3) { top: 40%; animation-delay: 4s; }
+        .code-line:nth-child(4) { top: 60%; animation-delay: 6s; }
+        .code-line:nth-child(5) { top: 80%; animation-delay: 8s; }
+
+        .container {
+            width: 300px; /* Container width */
+            background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+            padding: 15px; /* Padding for inner spacing */
+            position: relative; /* Relative positioning for popup */
+        }
+
+        h1 {
+            font-size: 1.5rem; /* Heading size */
+            text-shadow: 0 0 10px rgba(0, 255, 0, 0.7);
+            margin: 0; /* Remove default margin */
+        }
+
+        p {
+            font-size: 1rem; /* Paragraph size */
+            text-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+            margin: 10px 0; /* Margin for spacing */
+        }
+
+        #telegramButton {
+            display: none; /* Hidden initially */
+            margin-top: 10px; /* Margin for spacing */
+            font-size: 1rem; /* Adjusted font size */
+        }
+
+        .popup {
+            background: rgba(0, 0, 0, 0.8);
+            border: 2px solid #00ff00; /* Green border */
+            color: white;
+            padding: 10px; /* Smaller padding for mobile */
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+        }
+
+        .popup a {
+            color: #00ff00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .popup:hover {
+            background-color: rgba(0, 255, 0, 0.1);
+            transform: scale(1.05); /* Slightly enlarge on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Animated hacker code lines -->
+    <div class="code-line">#include &lt;stdio.h&gt;</div>
+    <div class="code-line">int main() {</div>
+    <div class="code-line">printf("Hacking in progress...\n");</div>
+    <div class="code-line">return 0;</div>
+    <div class="code-line">}</div>
+
+    <div class="container">
+        <h1>BN LAST KING</h1>
+        <p>FEEDBACK@BN_OWNER</p>
+
+        <div id="telegramButton" class="popup">
+            <a href="https://t.me/BNLASTKINGHACK" target="_blank">Join</a>
+        </div>
+    </div>
+
+    <script>
+        // Function to display the button after 30 seconds
+        setTimeout(function() {
+            document.getElementById('telegramButton').style.display = 'block';
+        }, 30000);  // 30 seconds in milliseconds (30000ms)
+    </script>
+
+</body>
+</html>
